@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8'>	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>InoveAcaoLivre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+	<style>	
+	/* 
+	Max width before this PARTICULAR table gets nasty
+	This query will take effect for any screen smaller than 760px
+	and also iPads specifically.
+	*/
+	@media 
+	only screen and (max-width: 760px),
+	(min-device-width: 768px) and (max-device-width: 1024px)  {
+	
+		/* Force table to not be like tables anymore */
+		table, thead, tbody, th, td, tr { 
+			display: block; 
+		}
+		
+		/* Hide table headers (but not display: none;, for accessibility) */
+		thead tr { 
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+		
+		tr { border: 1px solid #ccc; }
+		
+		td { 
+			/* Behave  like a "row" */
+			border: none;
+			border-bottom: 1px solid #eee; 
+			position: relative;
+			padding-left: 50%; 
+		}
+		
+		td:before { 
+			/* Now like a table header */
+			position: absolute;
+			/* Top/left values mimic padding */
+			top: 6px;
+			left: 6px;
+			width: 45%; 
+			padding-right: 10px; 
+			white-space: nowrap;
+		}
+		
+		/*
+		Label the data
+		*/
+		td:nth-of-type(1):before { content: "Atividade"; }
+		td:nth-of-type(2):before { content: "Turno"; }
+		td:nth-of-type(3):before { content: "Horário"; }
+		td:nth-of-type(4):before { content: "Local"; }
+		td:nth-of-type(5):before { content: "Facilitador"; }
+	}
+	
+	/* Smartphones (portrait and landscape) ----------- */
+	@media only screen
+	and (min-device-width : 320px)
+	and (max-device-width : 480px) {
+		body { 
+			padding: 0; 
+			margin: 0; 
+			width: 320px; }
+		}
+	
+	/* iPads (portrait and landscape) ----------- */
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		body { 
+			width: 495px; 
+		}
+	}	
+	</style>
+	<!--<![endif]-->
+
+</head>
+
+<body>
+
+	<section class="page-header" style="padding-top: 10px;padding-bottom: 15px;">
+      <!--<h1 class="project-name">Inove Ação Livre</h1>-->
+      <img src="img/logo.png"  width="55%" height="20%" align="center"/>
+	  <h2 class="project-tagline"></h2>
+      <a href="index.html#sobre" class="btn">Sobre o Evento</a>
+      <a href="#calendario" class="btn">Calendário de Atividades</a>
+	  <a href="inscricao.html#form" class="btn">Seja um Voluntário</a>
+    </section>
+
+	<p id=calendario>
+	
+	<div id="page-wrap">    
+	<table>
+		<thead>
+		<tr>
+			<th>Atividade</th>
+			<th>Turno</th>
+			<th>Horário</th>
+			<th>Local</th>
+			<th>Facilitador</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>ABERTURA</td>
+			<td>Manhã</td>
+			<td>08:00 as 08:30hrs</td>
+			<td>A Definir</td>
+			<td>A Definir</td>
+		</tr>
+		<tr>
+		  <td>Asterisk</td>
+		  <td>Manhã</td>
+		  <td>08:00 as 12:00hrs</td>
+		  <td>A Definir</td>
+		  <td>Thiago Reis</td>
+		</tr>
+		<tr>
+		  <td>Introdução a Angular JS</td>
+		  <td>Manhã</td>
+		  <td>08:00 as 11:00hrs</td>
+		  <td>A Definir</td>
+		  <td>Pedro Kislansky</td>
+		</tr>
+		<tr>
+		  <td>BI Pentaho</td>
+		  <td>Manhã</td>
+		  <td>11:20 as 12:20hrs</td>
+		  <td>A Definir</td>
+		  <td>Hermes Pinheiro</td>
+		</tr>
+		<tr>
+		  <td>Curso de Linux (Debian)</td>
+		  <td>Manhã</td>
+		  <td>08:00 as 11:00hrs</td>
+		  <td>A Definir</td>
+		  <td>Marcos Rogério</td>
+		</tr>
+		</tbody>
+	</table>	
+	</div>
+</body>
+
+</html>
