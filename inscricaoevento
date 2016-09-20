@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <head>
+    <meta charset="UTF-8">
+    <title>InoveAcaoLivre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+	
+    <section class="page-header" style="padding-top: 10px;padding-bottom: 15px;">
+      <!--<h1 class="project-name">Inove Ação Livre</h1>-->
+      <img id="img" src="img/logo.png"  width="55%" height="20%" align="center"/>
+	  <h2 class="project-tagline"></h2>
+      <a href="index.html" class="btn">Sobre o Evento</a>
+      <a href="calendario.html" class="btn">Programação</a>
+	  <a href="inscricao.html" class="btn">Seja um Voluntário</a>
+    </section>
+	
+	<p id="sobre"></p>
+
+    <section class="main-content">
+	
+		<div class='myIframe' > 
+       <iframe frameborder='0' height='2000px' width='760px' scrolling='yes' src='https://docs.google.com/forms/d/e/1FAIpQLSdvHQlz0-8swIubeQuDYdOoiT0IC8LdMmYi4qdx4lUU-z6L9g/viewform?embedded=true' frameborder="0" allowfullscreen></iframe>
+	</div>
+     
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Realização	</h3>
+<!--Lista com nome e logomarca dos Patricinadores-->
+<p></p>
+
+<ul>
+	<a href="http://unidom.com.br/salvador/" target="_blank"><img src="img/dp-logo.jpg" width= 150px height=100px/></a>
+</ul>
+
+		<footer class="redes-sociais">
+			<br>Redes Sociais
+			<p><a href="https://www.facebook.com/inoveacaolivre" target="_blank"><img src="img\logo-facebook.png" height=100px style="align: left;"/></a>
+			<!--<a href="" target="_blank"><img src="img\logo-twitter.png" height=40px style="margin-left:10px; top: -10px;"/></a>-->
+		</footer>
+		
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.024529080758!2d-38.5147251851781!3d-12.97028219085675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71604e577710a4b%3A0x8326b7f5fb1e8f18!2sFaculdade+Dom+Pedro+II+de+Tecnologia+-+Salvador!5e0!3m2!1spt-BR!2sbr!4v1473866411330" width="400" height="250" frameborder="0" style="border:0; margin-left: 500px; margin-top:-150px" allowfullscreen></iframe>
+
+</section>
+	
+<script type="text/javascript">
+    $(document).ready(function() {
+       $('#subir').click(function(){
+          $('html, body').animate({scrollTop:0}, 'slow');
+      return false;
+         });
+     });
+</script>
+  </body>
+</html>
